@@ -20,9 +20,11 @@ public class BadmintonSlots {
 // 	badmintonTiming.put(10,"19:00-20:00");}
 	
 	int count=8;
+	public void fillTimimgsForBadminton(){
 		 for (int i=1;i<=10;i++) {
 			 badmintonTiming.put(i, toString(count)+":00"+":"+toString(++count)+":00");
 		 }
+	}
 	public void availableSlots() {
 		System.out.println("For Badminton available slots are: ");
 		for(Map.Entry m : badmintonTiming.entrySet()){    
