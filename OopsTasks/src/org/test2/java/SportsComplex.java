@@ -9,8 +9,11 @@ public class SportsComplex {
 		Scanner sc=new Scanner(System.in);
 		boolean bb=true;
 		BadmintonSlots bad=new BadmintonSlots();
+		bad.fillTimimgsForBadminton();
 		FootballSlots foot=new FootballSlots();
+		foot.fillTimimgsForFootball();
 		BoxCricketSlots cricket=new BoxCricketSlots();
+		cricket.fillTimimgsForCricket();
 		SaveTheData save=new SaveTheData();
 		while(bb) {
 			System.out.println("Want to continue press 0 otherwise press 1: ");
